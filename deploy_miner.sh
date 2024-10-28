@@ -21,7 +21,7 @@ if ! apt list --installed 2>/dev/null | grep -q cuda-toolkit-12-6; then
     echo "CUDA toolkit 12.6 is not installed, proceeding with installation..."
 
     # Download and install the CUDA keyring package
-    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.1-1_all.deb
+    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
     dpkg -i cuda-keyring_1.1-1_all.deb
 
     # Update package lists and install CUDA toolkit
